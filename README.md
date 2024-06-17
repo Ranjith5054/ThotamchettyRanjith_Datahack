@@ -35,40 +35,27 @@ Problem description
  ● doctor_recc_xyz- xyz flu vaccine was recommended by doctor. (binary)
  ● doctor_recc_seasonal- Seasonal flu vaccine was recommended by doctor.
  (binary)
- ● chronic_med_condition- Has any of the following chronic medical
- conditions: asthma or an other lung condition, diabetes, a heart condition, a
- kidney condition, sickle cell anemia or other anemia, a neurological or
- neuromuscular condition, a liver condition, or a weakened immune system
- caused by a chronic illness or by medicines taken for a chronic illness.
- (binary)
- ● child_under_6_months- Has regular close contact with a child under the age
- of six months. (binary)
+ ● chronic_med_condition- Has any of the following chronic medical conditions: asthma or an other lung condition, diabetes, a heart condition, a kidney condition, sickle cell anemia or other anemia, a neurological or neuromuscular condition, a liver condition, or a weakened immune system caused by a chronic illness or by medicines taken for a chronic illness. (binary)
+ ● child_under_6_months- Has regular close contact with a child under the age of six months. (binary)
  ● health_worker- Is a healthcare worker. (binary)
  ● health_insurance- Has health insurance. (binary)
- ● opinion_xyz_vacc_effective- Respondent's opinion about xyz vaccine
- effectiveness.
- ○ 1=Notatall effective; 2 = Not very effective; 3 = Don't know; 4 =
- Somewhat effective; 5 = Very effective.
+ ● opinion_xyz_vacc_effective- Respondent's opinion about xyz vaccine effectiveness.
+  1=Notatall effective; 2 = Not very effective; 3 = Don't know; 4 = Somewhat effective; 5 = Very effective.
  ● opinion_xyz_risk- Respondent's opinion about risk of getting sick with xyz
- flu without vaccine.
- ○ 1=VeryLow; 2=Somewhat low; 3 = Don't know; 4 = Somewhat high;
- 5 = Very high.
+ flu without vaccine. 1=VeryLow; 2=Somewhat low; 3 = Don't know; 4 = Somewhat high; 5 = Very high.
  ● opinion_xyz_sick_from_vacc- Respondent's worry of getting sick from
  taking xyz vaccine.
- ○ 1=Notatall worried; 2 = Not very worried; 3 = Don't know; 4 =
- Somewhat worried; 5 = Very worried.
+ 1=Notatall worried; 2 = Not very worried; 3 = Don't know; 4 = Somewhat worried; 5 = Very worried.
  ● opinion_seas_vacc_effective- Respondent's opinion about seasonal flu
  vaccine effectiveness.
- ○ 1=Notatall effective; 2 = Not very effective; 3 = Don't know; 4 =
+ 1=Notatall effective; 2 = Not very effective; 3 = Don't know; 4 =
  Somewhat effective; 5 = Very effective.
  ● opinion_seas_risk- Respondent's opinion about risk of getting sick with
  seasonal flu without vaccine.
- ○ 1=VeryLow; 2=Somewhat low; 3 = Don't know; 4 = Somewhat high;
- 5 = Very high.
+ 1=VeryLow; 2=Somewhat low; 3 = Don't know; 4 = Somewhat high; 5 = Very high.
  ● opinion_seas_sick_from_vacc- Respondent's worry of getting sick from
  taking seasonal flu vaccine.
- ○ 1=Notatall worried; 2 = Not very worried; 3 = Don't know; 4 =
- Somewhat worried; 5 = Very worried.
+ 1=Notatall worried; 2 = Not very worried; 3 = Don't know; 4 = Somewhat worried; 5 = Very worried.
 ● age_group- Age group of respondent.
  ● education- Self-reported education level.
  ● race-Race of respondent.
