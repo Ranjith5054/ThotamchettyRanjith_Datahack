@@ -90,3 +90,59 @@ these two scores will be the overall score. A higher value indicates stronger
  performance.
  In Python, you can calculate this using sklearn.metrics.roc_auc_score for this
  multilabel setup with the default average="macro" parameter.
+
+
+
+
+####
+
+Breif
+
+####
+
+### Project Summary: Predicting Vaccine Uptake Using Logistic Regression
+
+#### Objective
+The objective of this project is to predict the likelihood of individuals receiving the `xyz_vaccine` and `seasonal_vaccine` based on their demographic and health-related features. This is achieved through a comprehensive data preprocessing and machine learning pipeline using logistic regression within a multi-output classification framework.
+
+#### Data Overview
+- **Training Features:** `training_set_features.csv`
+- **Training Labels:** `training_set_labels.csv`
+- **Test Features:** `test_set_features.csv`
+
+#### Steps and Methodology
+
+1. **Data Loading and Inspection**
+   - Loaded training data and labels using pandas.
+   - Inspected the data to understand the structure and identify any missing values.
+
+2. **Feature Selection**
+   - Dropped columns with a high percentage of missing values (`employment_industry` and `employment_occupation`).
+   - Separated features into numerical and categorical types.
+
+3. **Preprocessing**
+   - **Numerical Features:** Imputed missing values with the median and standardized the features.
+   - **Categorical Features:** Imputed missing values with a constant value ('missing') and applied one-hot encoding.
+
+4. **Pipeline Creation**
+   - Created a pipeline combining preprocessing steps and a logistic regression model wrapped in a `MultiOutputClassifier` to handle multiple target variables.
+
+5. **Model Training and Evaluation**
+   - Split the data into training and testing sets.
+   - Trained the pipeline on the training data.
+   - Predicted probabilities for the test set and evaluated the model using ROC AUC scores.
+   - Calculated mean ROC AUC to get an overall performance metric.
+
+6. **Predictions on New Data**
+   - Applied the trained pipeline to new test features to predict probabilities for `xyz_vaccine` and `seasonal_vaccine`.
+   - Saved the predictions and probabilities to CSV files.
+
+#### Results
+- **ROC AUC Scores:**
+  - `xyz_vaccine`: Achieved a specific ROC AUC score.
+  - `seasonal_vaccine`: Achieved a specific ROC AUC score.
+  - **Mean ROC AUC:** Average of the two scores providing an overall performance measure.
+- **Predictions:** Generated predictions and probabilities for the new data, saved as `new_data_predictions2.csv` and `new_data_probabilities.csv`.
+
+#### Conclusion
+This project demonstrates a robust approach to predicting vaccine uptake using logistic regression within a multi-output classification framework. The pipeline effectively handles missing data, preprocesses features, and provides interpretable predictions that can be used for further analysis or policy-making. The evaluation metrics indicate the model's capability to generalize well on unseen data.
